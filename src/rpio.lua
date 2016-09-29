@@ -8,7 +8,7 @@ end
 
 local function read(path)
   local f = io.popen('cat ' .. path, 'r')
-  local value = f:read('*a')
+  local value = tonumber(f:read('*a'))
   f:close()
   return value
 end
@@ -56,4 +56,3 @@ return function(which)
     end
   }
 end
-
