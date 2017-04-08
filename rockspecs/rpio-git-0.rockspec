@@ -1,7 +1,8 @@
 package = 'rpio'
 version = 'git-0'
 source = {
-  url = 'git://github.com/ryanplusplus/rpio.lua.git'
+  url = 'https://github.com/ryanplusplus/rpio.lua/archive/master.zip',
+  dir = 'rpio.lua-master/src'
 }
 description = {
   summary = 'Pure Lua Raspberry Pi GPIO library',
@@ -17,4 +18,3 @@ build = {
     ['rpio'] = 'rpio.lua'
   }
 }
-
